@@ -15173,17 +15173,6 @@ BPE BAU Process Emissions[Industry Category,F gases]:INTERPOLATE::=
 	~	g pollutant
 	~		|
 
-bpe check 2 co2e[Industry Category,Pollutant]=
-	BAU Process Emissions in CO2e[Industry Category,Pollutant]/10^12
-	~	
-	~		|
-
-bpe check co2e[Industry Category,Pollutant]=
-	BPE BAU Process Emissions[Industry Category,Pollutant]*GbPbT GWP by Pollutant by Timeframe\
-		[Pollutant,one hundred years]/10^12
-	~	
-	~		|
-
 BPE Share of Agriculture Process Emissions from Animals:INTERPOLATE::=
 	GET DIRECT DATA(
 	   'InputData/indst/BPE/BPE-SoAPEfA.csv',
@@ -59401,63 +59390,63 @@ The portion of non-energy industries' revenue going to labor (e.g. payments to t
 V300  Do not put anything below this section - it will be ignored
 *Industry - Main
 $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,83,0
-10,1,Industrial Fuel Use,2091,-139,75,30,8,3,0,16,0,0,0,0,-1--1--1,0-0-0,||I|0-0-0,0,0,0,0,0,0
-10,2,Process Emissions before CCS,1160,142,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
-10,3,Industrial Energy Related Emissions Excluding Fuels to Power CCS,2716,-309,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,4,Industrial Sector Pollutant Emissions,3515,-309,75,30,8,3,0,20,0,0,0,0,-1--1--1,255-192-128,||I|0-0-0,0,0,0,0,0,0
+10,1,Industrial Fuel Use,5906,157,75,30,8,3,0,16,0,0,0,0,-1--1--1,0-0-0,||I|0-0-0,0,0,0,0,0,0
+10,2,Process Emissions before CCS,4975,438,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,3,Industrial Energy Related Emissions Excluding Fuels to Power CCS,6531,-13,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,4,Industrial Sector Pollutant Emissions,7330,-13,75,30,8,3,0,20,0,0,0,0,-1--1--1,255-192-128,||I|0-0-0,0,0,0,0,0,0
 1,5,3,176,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,6,Electricity Demand by Industry,2091,32,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
-10,7,BPE BAU Process Emissions,626,652,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
-10,8,BIFUbC BAU Industrial Fuel Use before CCS,-724,-673,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
-10,9,Change in Process Emissions at BAU Production Levels by Pollutant in CO2e,624,4,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,6,Electricity Demand by Industry,5906,328,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,7,BPE BAU Process Emissions,4441,948,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
+10,8,BIFUbC BAU Industrial Fuel Use before CCS,3091,-377,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
+10,9,Change in Process Emissions at BAU Production Levels by Pollutant in CO2e,4439,300,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,10,9,66,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,11,Percent Change in Production due to Policies,-2003,-42,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
-10,12,MWh per BTU,2354,32,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,11,Percent Change in Production due to Policies,1812,254,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,12,MWh per BTU,6169,328,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,13,12,6,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,14,Industrial Sector Electricity Demand,2091,177,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,14,Industrial Sector Electricity Demand,5906,473,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,15,6,14,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,16,This Year Change in Process Emissions by Policy and Industry,339,4,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,17,Industrial Fuel Pollutant Emissions Intensities This Year,2716,-461,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,16,This Year Change in Process Emissions by Policy and Industry,4154,300,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,17,Industrial Fuel Pollutant Emissions Intensities This Year,6531,-165,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,18,17,3,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,19,PPRiFUfERoIF Potential Perc Reduction in Fuel Use from Early Retirement of Inefficient Facilities,-1387,868,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,20,PPRiFUfIIaIoE Potential Perc Reduction in Fuel Use from Improved Installation and Integration of Eqpt,-1387,615,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,21,PPRiFUfICaWHR Potential Perc Reduction in Fuel Use from Increased Cogen and Waste Heat Recovery,-1387,782,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,22,Change in Process Emissions,1160,-145,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
-10,23,Induced Foreign Emissions,3515,-157,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
-10,24,FLRbI Foreign Leakage Rate by Industry,3515,-16,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,19,PPRiFUfERoIF Potential Perc Reduction in Fuel Use from Early Retirement of Inefficient Facilities,2428,1164,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,20,PPRiFUfIIaIoE Potential Perc Reduction in Fuel Use from Improved Installation and Integration of Eqpt,2428,911,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,21,PPRiFUfICaWHR Potential Perc Reduction in Fuel Use from Increased Cogen and Waste Heat Recovery,2428,1078,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,22,Change in Process Emissions,4975,151,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,23,Induced Foreign Emissions,7330,139,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,24,FLRbI Foreign Leakage Rate by Industry,7330,280,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
 1,25,4,23,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
 1,26,24,23,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,27,BAU Process Emissions before CCS,1160,537,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,27,BAU Process Emissions before CCS,4975,833,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,28,27,2,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-12,29,0,3423,375,431,240,3,188,0,0,1,0,0,0,0,0,0,0,0,0
+12,29,0,7238,671,431,240,3,188,0,0,1,0,0,0,0,0,0,0,0,0
 Industry_Agriculture_CO2e_Emissions
-10,30,Fuel Used for CCS by Industry Sector,1574,-139,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,31,IFStFS Industrial Fuels Subject to Fuel Shifting,-475,22,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,32,Fraction of F Gas Substitution Achieved This Year,339,-558,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,33,Fraction of Methane Destruction Opportunities Achieved This Year,339,-616,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,34,Fraction of Cement Measures Achieved This Year,339,-153,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,35,Fraction of Methane Capture Opportunities Achieved This Year,339,-674,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,36,Fraction of Energy Savings from Early Facility Retirement Achieved This Year,-1387,949,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,37,Fraction of Installation and System Integration Issues Remedied This Year,-1387,533,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,38,Fraction of Potential Cogeneration and Waste Heat Recovery Adopted This Year,-1387,692,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,39,Fraction of Eligible Industrial Energy Use Shifted to Electricity This Year,-1065,22,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,40,Percentage Improvement in Eqpt Efficiency Standards above BAU This Year,-1387,439,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,41,Perc Change in Industrial Fuel Use from Early Retirement,-1065,949,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,30,Fuel Used for CCS by Industry Sector,5389,157,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,31,IFStFS Industrial Fuels Subject to Fuel Shifting,3340,318,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,32,Fraction of F Gas Substitution Achieved This Year,4154,-262,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,33,Fraction of Methane Destruction Opportunities Achieved This Year,4154,-320,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,34,Fraction of Cement Measures Achieved This Year,4154,143,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,35,Fraction of Methane Capture Opportunities Achieved This Year,4154,-378,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,36,Fraction of Energy Savings from Early Facility Retirement Achieved This Year,2428,1245,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,37,Fraction of Installation and System Integration Issues Remedied This Year,2428,829,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,38,Fraction of Potential Cogeneration and Waste Heat Recovery Adopted This Year,2428,988,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,39,Fraction of Eligible Industrial Energy Use Shifted to Electricity This Year,2750,318,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,40,Percentage Improvement in Eqpt Efficiency Standards above BAU This Year,2428,735,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,41,Perc Change in Industrial Fuel Use from Early Retirement,2750,1245,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,42,36,41,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
 1,43,19,41,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,44,Perc Change in Industrial Fuel Use from System Integration,-1065,615,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,45,Perc Change in Industrial Fuel Use from Cogen,-1065,782,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,46,Perc Change in Industrial Fuel Use from Efficiency Stds,-1065,439,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,44,Perc Change in Industrial Fuel Use from System Integration,2750,911,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,45,Perc Change in Industrial Fuel Use from Cogen,2750,1078,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,46,Perc Change in Industrial Fuel Use from Efficiency Stds,2750,735,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,47,40,46,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
 1,48,21,45,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
 1,49,38,45,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
 1,50,20,44,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
 1,51,37,44,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
 1,52,41,117,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,53,RnD Industry Fuel Use Perc Reduction This Year,-1065,1121,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,53,RnD Industry Fuel Use Perc Reduction This Year,2750,1417,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
 1,54,53,117,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,55,Fraction of Cropland and Rice Measures Achieved This Year,339,-337,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,56,Fraction of Livestock Measures Achieved This Year,339,-282,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,55,Fraction of Cropland and Rice Measures Achieved This Year,4154,-41,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,56,Fraction of Livestock Measures Achieved This Year,4154,14,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
 1,57,32,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,58,33,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,59,34,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
@@ -59465,399 +59454,393 @@ Industry_Agriculture_CO2e_Emissions
 1,61,55,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,62,56,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,63,16,9,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,64,FINAL TIME,1464,546,75,30,8,2,1,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,65,GbPbT GWP by Pollutant by Timeframe,891,262,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,66,Change in Process Emissions at BAU Production Levels,891,4,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,64,FINAL TIME,5279,842,75,30,8,2,1,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,65,GbPbT GWP by Pollutant by Timeframe,4706,558,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,66,Change in Process Emissions at BAU Production Levels,4706,300,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,67,66,22,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,68,65,66,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,69,Industrial Fuel Use for Energy Purposes before CCS and Methane Capture,-724,439,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
-10,70,Process Emissions before CCS,3264,-461,75,30,8,2,0,23,-1,0,0,0,128-128-128,192-192-192,||I|128-128-128,0,0,0,0,0,0
-10,71,Percent Change in Production due to Policies,-475,-265,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,69,Industrial Fuel Use for Energy Purposes before CCS and Methane Capture,3091,735,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,70,Process Emissions before CCS,7079,-165,75,30,8,2,0,23,-1,0,0,0,128-128-128,192-192-192,||I|128-128-128,0,0,0,0,0,0
+10,71,Percent Change in Production due to Policies,3340,31,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
 1,72,66,2,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,73,GWP by Pollutant,3776,-461,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,74,Industrial Sector CO2e Emissions,3776,-309,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,73,GWP by Pollutant,7591,-165,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,74,Industrial Sector CO2e Emissions,7591,-13,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,75,4,74,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,76,73,74,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,77,Fraction of Process Emissions Reductions by Policy,488,143,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,77,Fraction of Process Emissions Reductions by Policy,4303,439,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,78,16,77,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,79,77,9,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,80,PIFURfE Percentage Industry Fuel Use Reduction for Electricity,-1065,149,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,81,BAU Industrial Fuel Use for Energy Purposes before CCS,-724,-411,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
-10,82,Change in Process Emissions,1574,32,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-10,83,MHV Methane Heating Value,1801,177,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,84,Change in Methane Captured by Industry,1801,32,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,80,PIFURfE Percentage Industry Fuel Use Reduction for Electricity,2750,445,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,81,BAU Industrial Fuel Use for Energy Purposes before CCS,3091,-115,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,82,Change in Process Emissions,5389,328,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,83,MHV Methane Heating Value,5616,473,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,84,Change in Methane Captured by Industry,5616,328,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,85,82,84,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,86,83,84,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,87,46,117,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,88,45,117,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,89,44,117,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-12,90,0,533,-748,784,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
+12,90,0,4348,-452,784,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
 Calculating Process Emissions
-12,91,0,-956,-746,569,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
+12,91,0,2859,-450,569,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
 Calculating Change in Fuel Use before CCS and Methane Capture
-12,92,0,-4065,-746,709,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
+12,92,0,-250,-450,709,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
 Calculating Change in Imports and Production for Nonfuel Industries
-10,93,Percent Change in Production due to Policies,1160,7,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-12,94,0,3228,-748,656,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
+10,93,Percent Change in Production due to Policies,4975,303,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+12,94,0,7043,-452,656,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
 Calculating Emissions
-12,95,0,1595,140,102,42,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
+12,95,0,5410,436,102,42,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
 Methane captured by an industry reduces that industry's non-feedstock natural gas usage (to a minimum of zero).
 1,96,93,2,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,97,93,22,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,98,Percent Change in Production due to Policies,1801,-554,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-12,99,0,1951,-748,524,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
+10,98,Percent Change in Production due to Policies,5616,-258,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+12,99,0,5766,-452,524,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
 Calculating Total Fuel Use
-10,100,Industrial Fuel Use for Energy Purposes before CCS and Methane Capture,2716,-157,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,100,Industrial Fuel Use for Energy Purposes before CCS and Methane Capture,6531,139,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
 1,101,100,3,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,102,Fuel Used for CCS by Industry Sector,3012,-621,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,103,Industrial Sector Emissions from Fuels Used to Power CCS,3012,-461,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,102,Fuel Used for CCS by Industry Sector,6827,-325,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,103,Industrial Sector Emissions from Fuels Used to Power CCS,6827,-165,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,104,102,103,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,105,17,103,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,106,103,176,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,107,Industrial Fuel Use for Energy Purposes before CCS and Methane Capture,1801,-291,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-12,108,0,2716,-92,101,36,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
+10,107,Industrial Fuel Use for Energy Purposes before CCS and Methane Capture,5616,5,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+12,108,0,6531,204,101,36,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
 Captured methane does not reduce emissions from natural gas, as the captured methane is burned in place of natural gas.
-10,109,Industrial Fuel Use for Non Energy Purposes,2091,-408,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,109,Industrial Fuel Use for Non Energy Purposes,5906,-112,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
 1,110,109,1,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,111,107,217,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,112,84,217,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,113,1,6,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,114,BAU Industrial Sector Pollutant Emissions,3776,-157,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,114,BAU Industrial Sector Pollutant Emissions,7591,139,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,115,114,23,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,116,30,217,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,117,Perc Change in Industrial Fuel Use for Energy Purposes from Efficiency Measures,-1065,264,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
-10,118,PERAC Mass CO2e Avoidable by Marginal Cost,108,4,75,30,8,3,0,4,-1,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
+10,117,Perc Change in Industrial Fuel Use for Energy Purposes from Efficiency Measures,2750,560,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,118,PERAC Mass CO2e Avoidable by Marginal Cost,3923,300,75,30,8,3,0,4,-1,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
 1,119,118,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-12,120,0,-100,-108,84,64,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
+12,120,0,3715,188,84,64,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
 Apart from the cement industry, these MAC curves are for non-CO2 GHGs only.  (We construct a MAC curve for the cement industry that is entirely CO2.)
-10,121,Percent Reduction in Nonenergy Nonagriculture Industry Product Demand This Year,-4017,1238,75,30,8,130,0,4,-1,0,0,0,-1--1--1,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,121,Percent Reduction in Nonenergy Nonagriculture Industry Product Demand This Year,-202,1534,75,30,8,130,0,4,-1,0,0,0,-1--1--1,128-192-255,|||128-128-128,0,0,0,0,0,0
 1,122,121,149,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,123,Percent Animal Products Shifted to Nonanimal Products This Year,-4597,1090,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,124,BSoAIGtAP BAU Share of Agriculture Industry Going to Animal Products,-4312,1234,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
-10,125,RoNEPtAPPpULA Ratio of Nutritionally Equivalent Plant to Animal Products Produced per Unit Land Area,-4597,1234,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,126,Percent Change in Agriculture Industry Production due to Nonanimal Product Shifting,-4312,1093,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,123,Percent Animal Products Shifted to Nonanimal Products This Year,-782,1386,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,124,BSoAIGtAP BAU Share of Agriculture Industry Going to Animal Products,-497,1530,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
+10,125,RoNEPtAPPpULA Ratio of Nutritionally Equivalent Plant to Animal Products Produced per Unit Land Area,-782,1530,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,126,Percent Change in Agriculture Industry Production due to Nonanimal Product Shifting,-497,1389,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,127,123,126,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,128,124,126,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,129,125,126,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,130,126,149,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,131,BPE Share of Agriculture Process Emissions from Animals,624,-304,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
-10,132,Percent Reduction in Agriculture Process Emissions from Shifting to Nonanimal Products,624,-145,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,131,BPE Share of Agriculture Process Emissions from Animals,4439,-8,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
+10,132,Percent Reduction in Agriculture Process Emissions from Shifting to Nonanimal Products,4439,151,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,133,131,132,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,134,132,9,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,135,Percent Animal Products Shifted to Nonanimal Products This Year,891,-304,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,135,Percent Animal Products Shifted to Nonanimal Products This Year,4706,-8,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
 1,136,135,132,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,137,Process Emissions Abated due to Carbon Tax by Marginal Cost,108,143,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,138,Additional Carbon Tax Rate This Year,-105,4,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,139,PERAC Marginal Cost Definitions,108,262,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,137,Process Emissions Abated due to Carbon Tax by Marginal Cost,3923,439,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,138,Additional Carbon Tax Rate This Year,3710,300,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,139,PERAC Marginal Cost Definitions,3923,558,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,140,118,137,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,141,138,137,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,142,139,137,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,143,Does Carbon Tax Exempt Process Emissions This Year,-105,143,75,30,8,130,0,3,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,143,Does Carbon Tax Exempt Process Emissions This Year,3710,439,75,30,8,130,0,3,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
 1,144,143,137,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,145,Does Carbon Tax Exempt Non CO2 Emissions This Year,-105,262,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,145,Does Carbon Tax Exempt Non CO2 Emissions This Year,3710,558,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,146,145,137,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,147,137,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,148,Percent Change in Domestic Fuel Production by Fuel,-2003,-442,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
-10,149,Percent Change in Nonfuel Production due to Policies,-4017,1093,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
-10,150,Percent Change in Nonfuel Production due to Policies,-2264,-45,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-10,151,Percent Change in Domestic Fuel Industry Production,-2003,-308,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,148,Percent Change in Domestic Fuel Production by Fuel,1812,-146,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,149,Percent Change in Nonfuel Production due to Policies,-202,1389,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,150,Percent Change in Nonfuel Production due to Policies,1551,251,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,151,Percent Change in Domestic Fuel Industry Production,1812,-12,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,152,148,151,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,153,151,154,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,154,Last Year Percent Change in Domestic Fuel Industry Production,-2003,-173,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
-12,155,0,-2024,-746,401,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
+10,154,Last Year Percent Change in Domestic Fuel Industry Production,1812,123,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+12,155,0,1791,-450,401,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
 Calculating Change in Production for Fuel Industries
-12,156,0,-1788,-202,115,73,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
+12,156,0,2027,94,115,73,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
 Changes in production by fuel industries affects electricity demand, which affects which plant types get built (e.g. natural gas plants), which affects domestic fuel use.  This circularity is resolved with a one-year delay in this feedback.
-12,157,0,3515,56,99,40,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
+12,157,0,7330,352,99,40,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
 This leaked emissions total does not account for the effects of exporting more or less fuels (see the "Fuels" sheet).
-10,158,Change in Fuel Production,-2264,-442,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,158,Change in Fuel Production,1551,-146,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,159,158,148,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,160,Change in Electricity Generation by Type,-2003,-570,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,161,BAU Electricity Generation by Type,-1767,-569,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,160,Change in Electricity Generation by Type,1812,-274,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,161,BAU Electricity Generation by Type,2048,-273,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,162,161,148,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,163,160,148,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-12,164,0,-1883,-629,185,32,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
+12,164,0,1932,-333,185,32,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
 We calculate the percent change in electricity production even though we don't use it here because we use it on the Indutry - Cash Flow sheet.
-10,165,Fraction of F Gas Destruction Achieved This Year,339,-503,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,166,Fraction of F Gas Recovery Achieved This Year,339,-446,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,167,Fraction of F Gas Inspct Maint Retrofit Achieved This Year,339,-391,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,165,Fraction of F Gas Destruction Achieved This Year,4154,-207,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,166,Fraction of F Gas Recovery Achieved This Year,4154,-150,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,167,Fraction of F Gas Inspct Maint Retrofit Achieved This Year,4154,-95,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
 1,168,165,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,169,166,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,170,167,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,171,Industrial Sector Energy Related Emissions after CCS,3264,-309,75,30,8,3,0,16,0,0,0,0,-1--1--1,0-0-0,||I|0-0-0,0,0,0,0,0,0
-10,172,Process Emissions after CCS,3515,-461,75,30,8,3,0,16,0,0,0,0,-1--1--1,0-0-0,||I|0-0-0,0,0,0,0,0,0
+10,171,Industrial Sector Energy Related Emissions after CCS,7079,-13,75,30,8,3,0,16,0,0,0,0,-1--1--1,0-0-0,||I|0-0-0,0,0,0,0,0,0
+10,172,Process Emissions after CCS,7330,-165,75,30,8,3,0,16,0,0,0,0,-1--1--1,0-0-0,||I|0-0-0,0,0,0,0,0,0
 1,173,70,172,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,174,172,4,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,175,171,4,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,176,Industrial Sector Energy Related Emissions before CCS,3009,-309,75,30,8,3,0,16,0,0,0,0,-1--1--1,0-0-0,||I|0-0-0,0,0,0,0,0,0
+10,176,Industrial Sector Energy Related Emissions before CCS,6824,-13,75,30,8,3,0,16,0,0,0,0,-1--1--1,0-0-0,||I|0-0-0,0,0,0,0,0,0
 1,177,176,171,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,178,Perc Change in Sectoral Energy Use due to Exogenous GDP Adjustment,343,537,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
-10,179,BAU Industrial Fuel Use before CCS after GDP and Fuel Production Adjustment,-724,-561,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,178,Perc Change in Sectoral Energy Use due to Exogenous GDP Adjustment,4158,833,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
+10,179,BAU Industrial Fuel Use before CCS after GDP and Fuel Production Adjustment,3091,-265,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
 1,180,179,81,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,181,Perc Change in Sectoral Energy Use due to Exogenous GDP Adjustment,-475,-556,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
+10,181,Perc Change in Sectoral Energy Use due to Exogenous GDP Adjustment,3340,-260,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
 1,182,181,179,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
 1,183,8,179,0,0,0,0,0,0,0,-1--1--1,,1|(0,0)|
-10,184,BAU Process Emissions after GDP and Fuel Production Adjustment,626,537,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,184,BAU Process Emissions after GDP and Fuel Production Adjustment,4441,833,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,185,184,209,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,186,184,27,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,187,7,184,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,188,178,184,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,189,BDMFL Boolean Disable Macroeconomic Feedback Loops,-4597,950,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
-10,190,Percent Change in Production Due to Macroeconomic Feedbacks,-4312,950,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,189,BDMFL Boolean Disable Macroeconomic Feedback Loops,-782,1246,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
+10,190,Percent Change in Production Due to Macroeconomic Feedbacks,-497,1246,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,191,189,190,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,192,190,193,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,193,Percent Change in Production after Macroeconomic Feedbacks,-4017,950,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,193,Percent Change in Production after Macroeconomic Feedbacks,-202,1246,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,194,193,149,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,195,Last Year Percent Change in Contribution to Gross Domestic Product Excluding Most Direct Impacts by ISIC Code,-4312,794,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,195,Last Year Percent Change in Contribution to Gross Domestic Product Excluding Most Direct Impacts by ISIC Code,-497,1090,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,196,195,190,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,197,Nonenergy Industry Expenses Passed Through to Buyers by Producer ISIC Code,-4598,-614,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-10,198,Change in Passthrough Expenses as Share of Nonenergy Industry Output by ISIC Code,-4017,-369,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,199,Change in Passthrough Expenses as Share of Nonenergy Industry Output by Industry Category,-4017,-229,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,197,Nonenergy Industry Expenses Passed Through to Buyers by Producer ISIC Code,-783,-318,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,198,Change in Passthrough Expenses as Share of Nonenergy Industry Output by ISIC Code,-202,-73,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,199,Change in Passthrough Expenses as Share of Nonenergy Industry Output by Industry Category,-202,67,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,200,198,199,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,201,EoDfIP Elasticities of Demand for Industrial Products,-4017,365,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,202,Percent Change in Nonenergy Industry Product Demand due to Change in Passthrough Expenses,-4310,368,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,201,EoDfIP Elasticities of Demand for Industrial Products,-202,661,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,202,Percent Change in Nonenergy Industry Product Demand due to Change in Passthrough Expenses,-495,664,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,203,201,202,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,204,Last Year Percent Change in Nonenergy Industry Domestic Production due to Passthrough Expenses,-4017,804,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-12,205,0,-3733,-608,162,57,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
+10,204,Last Year Percent Change in Nonenergy Industry Domestic Production due to Passthrough Expenses,-202,1100,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+12,205,0,82,-312,162,57,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
 Passthrough expenses include changes in spending on fuels/energy, carbon tax on process emissions, capital equipment due to efficiency and fuel shifting policies, implementation cost/savings of process emissions policies, CCS equipment and O&M costs, and any carbon tax rebate from CCS.
-10,206,Smoothing Time for Passthrough Expense Impacts on Industrial Production,-3742,-369,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-255-192,|||0-0-0,0,0,0,0,0,0
-10,207,BPoIFUfE BAU Proportion of Industrial Fuel Used for Energy,-1065,-411,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
+10,206,Smoothing Time for Passthrough Expense Impacts on Industrial Production,73,-73,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-255-192,|||0-0-0,0,0,0,0,0,0
+10,207,BPoIFUfE BAU Proportion of Industrial Fuel Used for Energy,2750,-115,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
 1,208,207,81,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,209,BAU Process Emissions in CO2e,624,262,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,209,BAU Process Emissions in CO2e,4439,558,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,210,65,209,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,211,Fraction of N2O Abatement Achieved This Year,339,-94,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,211,Fraction of N2O Abatement Achieved This Year,4154,202,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
 1,212,211,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,213,Industry Process Emissions Policy to Pollutant Mappings,339,262,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-255-192,|||0-0-0,0,0,0,0,0,0
+10,213,Industry Process Emissions Policy to Pollutant Mappings,4154,558,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-255-192,|||0-0-0,0,0,0,0,0,0
 1,214,213,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,215,209,213,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,216,209,9,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,217,Industrial Fuel Use for Energy Purposes,1801,-139,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,217,Industrial Fuel Use for Energy Purposes,5616,157,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
 1,218,217,1,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,219,BAU Fuel Production Imports and Exports,-2264,-308,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,219,BAU Fuel Production Imports and Exports,1551,-12,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,220,219,148,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,221,219,151,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,222,BAU Output by ISIC Code by Year,-4314,-498,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,223,Percent Change in Domestic Plus Exported Natural Gas Demand,-2003,186,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,224,Last Year Percent Change in Domestic Plus Exported Natural Gas Demand,-2003,80,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,222,BAU Output by ISIC Code by Year,-499,-202,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,223,Percent Change in Domestic Plus Exported Natural Gas Demand,1812,482,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,224,Last Year Percent Change in Domestic Plus Exported Natural Gas Demand,1812,376,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,225,223,224,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,226,Change in Fuel Exports,-2269,268,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,226,Change in Fuel Exports,1546,564,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,227,226,223,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,228,Fuel Use for Energy Purposes by Industrial Process before Fuel Shifting,-724,-124,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
-10,229,Fraction of Eligible Industrial Energy Use Shifted to Hydrogen This Year,-475,149,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,230,Fraction of CO2 Storage Through Tillage Practices This Year,339,-219,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,228,Fuel Use for Energy Purposes by Industrial Process before Fuel Shifting,3091,172,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,229,Fraction of Eligible Industrial Energy Use Shifted to Hydrogen This Year,3340,445,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,230,Fraction of CO2 Storage Through Tillage Practices This Year,4154,77,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
 1,231,230,16,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,232,IESE Import Export Substitution Elasticities,-4313,-96,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,233,Percent of Purchases of Domestically Produced Goods Shifted to Purchases of Imports,-4313,45,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,232,IESE Import Export Substitution Elasticities,-498,200,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,233,Percent of Purchases of Domestically Produced Goods Shifted to Purchases of Imports,-498,341,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,234,232,233,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,235,Domestic Content Share of Consumption Before Import Substitution by ISIC Code,-4597,45,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,235,Domestic Content Share of Consumption Before Import Substitution by ISIC Code,-782,341,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,236,235,233,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,237,Weighted Average Percent Change in Cost of Goods by Industry Category,-4310,211,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,237,Weighted Average Percent Change in Cost of Goods by Industry Category,-495,507,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,238,235,237,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,239,237,202,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,240,Percent of Purchases of Domestically Produced Goods Shifted to Purchases of Imports,-4312,503,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,240,Percent of Purchases of Domestically Produced Goods Shifted to Purchases of Imports,-497,799,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,241,204,193,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,242,Percent Change in Nonenergy Industry Domestic Production due to Change in Passthrough Expenses,-4017,503,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,242,Percent Change in Nonenergy Industry Domestic Production due to Change in Passthrough Expenses,-202,799,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,243,242,204,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,244,240,242,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,245,202,242,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,246,Change in Nonenergy Industry Product Imports as Share of Domestic Production,-4597,503,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,246,Change in Nonenergy Industry Product Imports as Share of Domestic Production,-782,799,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,247,240,246,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,248,202,246,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,249,Change in Imports of Nonenergy Products,-4597,630,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,249,Change in Imports of Nonenergy Products,-782,926,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,250,246,249,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,251,Change in Domestic Output by ISIC Code,-4598,-492,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,252,BAU Output by ISIC Code by Year,-4598,-229,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,253,Output by ISIC Code by Year,-4598,-369,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,251,Change in Domestic Output by ISIC Code,-783,-196,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,252,BAU Output by ISIC Code by Year,-783,67,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,253,Output by ISIC Code by Year,-783,-73,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,254,252,253,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,255,251,253,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,256,206,198,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,257,235,246,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,258,Toggle Carbon Tax Border Adjustment This Year,-3487,-96,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,259,Carbon Tax Effects on Expenditures by Nonenergy Industries As Share of Nonenergy Industry Output,-3739,211,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,260,Change in Passthrough Expenses as Share of Nonenergy Industry Output After Carbon Tax Border Adjustment by Industry Category,-4017,-96,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
-10,261,BDCTBA Boolean Disable Carbon Tax Border Adjustment,-3742,-96,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
-10,262,Is Carbon Tax Border Adjustment Disabled,-3740,45,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,258,Toggle Carbon Tax Border Adjustment This Year,328,200,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,259,Carbon Tax Effects on Expenditures by Nonenergy Industries As Share of Nonenergy Industry Output,76,507,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,260,Change in Passthrough Expenses as Share of Nonenergy Industry Output After Carbon Tax Border Adjustment by Industry Category,-202,200,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,261,BDCTBA Boolean Disable Carbon Tax Border Adjustment,73,200,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
+10,262,Is Carbon Tax Border Adjustment Disabled,75,341,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,263,261,262,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,264,258,262,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,265,259,260,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,266,199,260,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,267,Industrial Fuel Carbon Tax Amount per Unit Energy,-5685,-433,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,268,BAU Industrial Fuel Carbon Tax Amount per Unit Energy,-5685,-311,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,269,Industrial Fuel Use for Energy Purposes,-5395,-531,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,270,BAU Industrial Fuel Use for Energy Purposes,-5395,-187,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,271,Carbon Tax Levied on Industrial Fuels,-5395,-433,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
-10,272,BAU Carbon Tax Levied on Industrial Fuels,-5395,-311,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,267,Industrial Fuel Carbon Tax Amount per Unit Energy,-1870,-137,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,268,BAU Industrial Fuel Carbon Tax Amount per Unit Energy,-1870,-15,75,30,8,130,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,269,Industrial Fuel Use for Energy Purposes,-1580,-235,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,270,BAU Industrial Fuel Use for Energy Purposes,-1580,109,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,271,Carbon Tax Levied on Industrial Fuels,-1580,-137,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,272,BAU Carbon Tax Levied on Industrial Fuels,-1580,-15,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,273,268,272,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,274,270,272,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,275,267,271,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,276,269,271,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,277,Change in Carbon Tax Levied on Industrial Fuels,-5127,-311,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,277,Change in Carbon Tax Levied on Industrial Fuels,-1312,-15,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,278,271,277,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,279,272,277,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,280,Industry Sector Carbon Tax Rebate due to CCS,-5127,-531,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-10,281,Change in Carbon Tax on Process Emissions by Industry,-5127,-433,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-10,282,Cost to Industry from Process Emissions Policies due to Carbon Tax,-5127,-618,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-12,283,0,-5382,-746,443,28,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
+10,280,Industry Sector Carbon Tax Rebate due to CCS,-1312,-235,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,281,Change in Carbon Tax on Process Emissions by Industry,-1312,-137,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,282,Cost to Industry from Process Emissions Policies due to Carbon Tax,-1312,-322,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+12,283,0,-1567,-450,443,28,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
 Summing Carbon Tax Effects on Expenditures by Nonenergy Industries
-10,284,Carbon Tax Effects on Expenditures by Nonenergy Industries,-5127,-187,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,284,Carbon Tax Effects on Expenditures by Nonenergy Industries,-1312,109,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,285,277,284,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,286,281,284,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,287,280,284,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,288,282,284,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,289,SoCiIEPTtB Share of Change in Industry Expenses Passed Through to Buyers,-5395,-28,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,290,Carbon Tax Effects on Expenditures by Nonenergy Industries Passed Through to Buyers,-5127,-28,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,289,SoCiIEPTtB Share of Change in Industry Expenses Passed Through to Buyers,-1580,268,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,290,Carbon Tax Effects on Expenditures by Nonenergy Industries Passed Through to Buyers,-1312,268,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
 1,291,284,290,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,292,289,290,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,293,Carbon Tax Effects on Expenditures by Nonenergy Industries Passed Through to Buyers,-3499,45,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-10,294,Last Year Output by ISIC Code,-4314,-369,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,293,Carbon Tax Effects on Expenditures by Nonenergy Industries Passed Through to Buyers,316,341,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,294,Last Year Output by ISIC Code,-499,-73,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
 1,295,253,294,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,296,294,198,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,297,Last Year Output by ISIC Code,-3739,357,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,297,Last Year Output by ISIC Code,76,653,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
 1,298,297,259,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,299,222,294,0,0,0,0,0,128,1,-1--1--1,,1|(0,0)|
 1,300,262,259,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,301,293,259,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,302,259,237,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,303,199,237,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-12,304,0,-3524,-359,108,46,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
+12,304,0,291,-63,108,46,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
 Smoothing here dampens oscillations in some industries in Nonenergy Industry Expenses Passed Through to Buyer by Producer ISIC Code.
-10,305,Fraction of Imported Industrial Outputs Shifted to In Region Suppliers This Year,-4017,151,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
-10,306,Portion of Change in Passthrough Expenses as Share of Nonenergy Industry Output Affecting Imports and Exports,-4017,45,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,305,Fraction of Imported Industrial Outputs Shifted to In Region Suppliers This Year,-202,447,75,30,8,2,0,5,-1,0,0,0,128-128-128,128-192-255,|||128-128-128,0,0,0,0,0,0
+10,306,Portion of Change in Passthrough Expenses as Share of Nonenergy Industry Output Affecting Imports and Exports,-202,341,75,30,8,131,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
 1,307,305,306,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,308,260,306,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,309,306,233,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,310,Change in Exports of Nonenergy Products,-2880,-382,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
-12,311,0,-2900,-746,401,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
+10,310,Change in Exports of Nonenergy Products,935,-86,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+12,311,0,915,-450,401,27,3,135,0,12,-1,3,0,0,-1--1--1,192-255-255,|18||0-0-0,0,0,0,0,0,0
 Calculating Change in Exports and Domestic Consumption for Nonfuel Industries
-10,312,Change in Imports of Nonenergy Products,-3009,14,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,313,Change in Exports of Nonenergy Products,-3009,84,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,314,Change in Domestic Consumption of Nonenergy Products,-3009,172,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,312,Change in Imports of Nonenergy Products,806,310,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,313,Change in Exports of Nonenergy Products,806,380,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,314,Change in Domestic Consumption of Nonenergy Products,806,468,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,315,312,314,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,316,313,314,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,317,Change in Domestic Output by ISIC Code,-3009,-56,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,317,Change in Domestic Output by ISIC Code,806,240,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,318,317,314,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,319,IESE Import Export Substitution Elasticities,-3153,-248,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,320,Portion of Change in Passthrough Expenses as Share of Nonenergy Industry Output Affecting Imports and Exports,-3153,-510,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
-10,321,BESoP BAU Export Share of Production,-2880,-624,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,322,BAU Output by ISIC Code by Year,-2641,-510,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,323,BAU Exports,-2880,-510,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,319,IESE Import Export Substitution Elasticities,662,48,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,320,Portion of Change in Passthrough Expenses as Share of Nonenergy Industry Output Affecting Imports and Exports,662,-214,75,30,8,130,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,321,BESoP BAU Export Share of Production,935,-328,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,322,BAU Output by ISIC Code by Year,1174,-214,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,323,BAU Exports,935,-214,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,324,322,323,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,325,321,323,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,326,Percent Change in Exports of Nonenergy Products,-3153,-383,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,326,Percent Change in Exports of Nonenergy Products,662,-87,75,30,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 1,327,320,326,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,328,319,326,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,329,323,310,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,330,326,310,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,331,Exports of Nonenergy Products,-2641,-382,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,331,Exports of Nonenergy Products,1174,-86,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,332,323,331,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,333,310,331,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,334,BAU Imported Output by ISIC Code,-4830,503,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,335,Imports of Nonenergy Products,-4830,630,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,334,BAU Imported Output by ISIC Code,-1015,799,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,335,Imports of Nonenergy Products,-1015,926,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,336,249,335,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,337,334,335,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,338,Exports of Nonenergy Products,-2770,84,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,339,Imports of Nonenergy Products,-2770,14,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,340,Output by ISIC Code by Year,-2770,-56,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,341,Domestic Consumption of Nonenergy Products,-2770,172,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,338,Exports of Nonenergy Products,1045,380,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,339,Imports of Nonenergy Products,1045,310,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,340,Output by ISIC Code by Year,1045,240,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,341,Domestic Consumption of Nonenergy Products,1045,468,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,342,338,341,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,343,339,341,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,344,340,341,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,345,Quantization Size for Percentage Changes,-2003,268,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,345,Quantization Size for Percentage Changes,1812,564,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,346,345,223,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,347,Last Year Output by ISIC Code,-4312,630,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,347,Last Year Output by ISIC Code,-497,926,75,30,8,2,0,7,-1,0,0,0,128-128-128,192-192-192,|||128-128-128,0,0,0,0,0,0
 1,348,347,249,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,349,BDMFL Boolean Disable Macroeconomic Feedback Loops,-4791,-229,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
+10,349,BDMFL Boolean Disable Macroeconomic Feedback Loops,-976,67,75,30,8,130,0,5,-1,0,0,0,128-128-128,128-192-0,|||128-128-128,0,0,0,0,0,0
 1,350,349,253,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,351,VoSTR VAT or Sales Tax Rate,-4314,-614,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,352,Nonenergy Industry Expenses Passed Through to Buyers by Producer ISIC Code with VAT or Sales Tax Removed,-4017,-614,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,351,VoSTR VAT or Sales Tax Rate,-499,-318,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,352,Nonenergy Industry Expenses Passed Through to Buyers by Producer ISIC Code with VAT or Sales Tax Removed,-202,-318,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,353,351,352,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,354,197,352,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,355,This Year Process Pollutants Sequestered by Industry Sector,3515,-621,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,356,This Year Energy Related Pollutants Sequestered by Industry Sector,3264,-157,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,355,This Year Process Pollutants Sequestered by Industry Sector,7330,-325,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,356,This Year Energy Related Pollutants Sequestered by Industry Sector,7079,139,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,357,356,171,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,358,355,172,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,359,BPFUbIP BAU Percentage Fuel Use by Industrial Process for Thermal Fuels,-1387,-265,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,360,BPFUbIP BAU Percentage Fuel Use by Industrial Process for Electricity,-1387,-124,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,361,BAU Percentage Fuel Use by Industrial Process,-1065,-124,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,359,BPFUbIP BAU Percentage Fuel Use by Industrial Process for Thermal Fuels,2428,31,75,30,8,131,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,360,BPFUbIP BAU Percentage Fuel Use by Industrial Process for Electricity,2428,172,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,361,BAU Percentage Fuel Use by Industrial Process,2750,172,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,362,360,361,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,363,359,361,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,364,361,228,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,365,Industrial Fuel Use after Electrification,-724,22,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,365,Industrial Fuel Use after Electrification,3091,318,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,366,80,365,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,367,228,365,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,368,39,365,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,369,31,365,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,370,Industrial Fuel Use after Shifting to Hydrogen,-724,149,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,370,Industrial Fuel Use after Shifting to Hydrogen,3091,445,75,30,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,371,31,370,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,372,365,370,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,373,229,370,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,374,Quantization Size for Percentage Changes,-1029,565,75,30,8,2,1,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,374,Quantization Size for Percentage Changes,2786,861,75,30,8,2,1,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,375,150,11,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,376,154,11,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,377,224,11,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,378,Total Energy Use,-2269,80,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
-10,379,BAU Total Energy Use,-2269,186,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,378,Total Energy Use,1546,376,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
+10,379,BAU Total Energy Use,1546,482,75,30,8,2,0,19,-1,0,0,0,128-128-128,0-0-0,||I|128-128-128,0,0,0,0,0,0
 1,380,378,223,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,381,379,223,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,382,BAU Fuel Production Imports and Exports,-2269,487,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,383,BFPIaE BAU Fuel Production Imports and Exports,-2269,365,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,384,BAU Percent Change in Fuel Production from Calculated Fuel Demand,-2003,417,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
+10,382,BAU Fuel Production Imports and Exports,1546,783,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,383,BFPIaE BAU Fuel Production Imports and Exports,1546,661,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,384,BAU Percent Change in Fuel Production from Calculated Fuel Demand,1812,713,75,30,8,3,0,4,0,0,0,0,-1--1--1,255-192-128,|||0-0-0,0,0,0,0,0,0
 1,385,383,384,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,386,382,384,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,387,Last Year BAU Percent Change in Fuel Production from Calculated Fuel Demand,-2003,504,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
+10,387,Last Year BAU Percent Change in Fuel Production from Calculated Fuel Demand,1812,800,75,30,8,3,0,4,0,0,0,0,-1--1--1,192-192-192,|||0-0-0,0,0,0,0,0,0
 1,388,384,387,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,389,Last Year BAU Percent Change in Fuel Production from Calculated Fuel Demand,-1065,-565,75,30,8,2,0,23,-1,0,0,0,128-128-128,192-192-192,||I|128-128-128,0,0,0,0,0,0
+10,389,Last Year BAU Percent Change in Fuel Production from Calculated Fuel Demand,2750,-269,75,30,8,2,0,23,-1,0,0,0,128-128-128,192-192-192,||I|128-128-128,0,0,0,0,0,0
 1,390,389,179,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,391,Last Year BAU Percent Change in Fuel Production from Calculated Fuel Demand,352,645,75,30,8,2,0,23,-1,0,0,0,128-128-128,192-192-192,||I|128-128-128,0,0,0,0,0,0
+10,391,Last Year BAU Percent Change in Fuel Production from Calculated Fuel Demand,4167,941,75,30,8,2,0,23,-1,0,0,0,128-128-128,192-192-192,||I|128-128-128,0,0,0,0,0,0
 1,392,391,184,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,393,Fraction of Industry Category Subject to Carbon Tax,105,-104,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,393,Fraction of Industry Category Subject to Carbon Tax,3920,192,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,394,393,16,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,395,Fraction of Industry Covered by Carbon Tax Border Adjustment,-3499,359,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
-10,396,Boolean Use Non BAU Carbon Tax Border Adjustment Industry Qualification This Year,-3499,211,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,397,BFoICbCTBA BAU Fraction of Industry Covered by Carbon Tax Border Adjustment,-3499,482,75,30,8,3,0,4,-1,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
+10,395,Fraction of Industry Covered by Carbon Tax Border Adjustment,316,655,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,396,Boolean Use Non BAU Carbon Tax Border Adjustment Industry Qualification This Year,316,507,75,30,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,397,BFoICbCTBA BAU Fraction of Industry Covered by Carbon Tax Border Adjustment,316,778,75,30,8,3,0,4,-1,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
 1,398,397,395,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,399,396,395,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,400,395,259,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,401,FoICbCTBA Fraction of Industry Covered by Carbon Tax Border Adjustment,-3743,482,75,30,8,3,0,4,-1,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
+10,401,FoICbCTBA Fraction of Industry Covered by Carbon Tax Border Adjustment,72,778,75,30,8,3,0,4,-1,0,0,0,-1--1--1,192-128-192,|||0-0-0,0,0,0,0,0,0
 1,402,401,395,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,403,Industrial Fuel Use for Energy Purposes before Fuel Shifting,-724,-265,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,403,Industrial Fuel Use for Energy Purposes before Fuel Shifting,3091,31,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
 1,404,71,403,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,405,81,403,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,406,403,228,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
-10,407,Industrial Fuel Use for Energy Purposes befoe CCS and Methane Capture by Industrial Process,-724,264,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,407,Industrial Fuel Use for Energy Purposes befoe CCS and Methane Capture by Industrial Process,3091,560,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
 1,408,117,407,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,409,370,407,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,410,407,69,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,411,Last Year Nonenergy Industy Expenses Passed Through to Buyers by Producer ISIC Code with VAT or Sales Tax Removed,-4017,-498,126,38,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,411,Last Year Nonenergy Industy Expenses Passed Through to Buyers by Producer ISIC Code with VAT or Sales Tax Removed,-202,-202,126,38,8,3,0,0,0,0,0,0,0,0,0,0,0,0
 1,412,352,411,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
 1,413,411,198,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,414,Industrial Fuel Use for Non Energy Purposes Before Feedstock Shifting,2091,-554,74,32,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
-10,415,BAU Industrial Fuel Use for Non Energy Purposes,2091,-668,73,25,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,414,Industrial Fuel Use for Non Energy Purposes Before Feedstock Shifting,5906,-258,74,32,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,415,BAU Industrial Fuel Use for Non Energy Purposes,5906,-372,73,25,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,416,415,414,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,417,98,414,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,418,414,109,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,419,Fraction of Feedstock Shifted This Year,1801,-408,65,33,8,2,0,6,-1,0,0,0,-1--1--1,128-192-255,|||0-0-0,0,0,0,0,0,0
+10,419,Fraction of Feedstock Shifted This Year,5616,-112,65,33,8,2,0,6,-1,0,0,0,-1--1--1,128-192-255,|||0-0-0,0,0,0,0,0,0
 1,420,419,109,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,421,IFSRF Industrial Feedstock Shifting Recipient Fuel,2354,-554,74,25,8,3,0,4,-1,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
-10,422,IFSR Industrial Fuel Shifting Ratio,2354,-408,61,25,8,3,0,4,-1,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,421,IFSRF Industrial Feedstock Shifting Recipient Fuel,6169,-258,74,25,8,3,0,4,-1,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
+10,422,IFSR Industrial Fuel Shifting Ratio,6169,-112,61,25,8,3,0,4,-1,0,0,0,-1--1--1,255-128-192,|||0-0-0,0,0,0,0,0,0
 1,423,421,109,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,424,422,109,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,425,Industrial Fuel Use for Non Energy Purposes Before Feedstock Shifting,761,355,70,39,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
-10,426,Industrial Fuel Use for Non Energy Purposes,761,452,62,32,8,2,0,6,-1,0,0,0,-1--1--1,192-192-192,|||128-128-128,0,0,0,0,0,0
-10,427,Change in Industrial Fuel Use for Non Energy Purposes due to Feedstock Shifting,953,406,74,39,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,425,Industrial Fuel Use for Non Energy Purposes Before Feedstock Shifting,4576,651,70,39,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,426,Industrial Fuel Use for Non Energy Purposes,4576,748,62,32,8,2,0,6,-1,0,0,0,-1--1--1,192-192-192,|||128-128-128,0,0,0,0,0,0
+10,427,Change in Industrial Fuel Use for Non Energy Purposes due to Feedstock Shifting,4768,702,74,39,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
 1,428,425,427,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,429,426,427,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,430,Change in Process Emissions from Feedstock Shifting,1160,406,74,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
-10,431,Industrial Fuel Pollutant Emissions Intensities This Year,1359,406,62,39,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+10,430,Change in Process Emissions from Feedstock Shifting,4975,702,74,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,431,Industrial Fuel Pollutant Emissions Intensities This Year,5174,702,62,39,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 1,432,427,430,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,433,431,430,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 1,434,430,2,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
-10,435,bpe check co2e,859,664,51,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
-1,436,7,435,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-1,437,65,435,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,438,bpe check 2 co2e,455,350,57,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
-1,439,209,438,0,0,0,0,0,128,0,-1--1--1,,1|(0,0)|
-10,440,Output Process Emissions in CO2e by Industry,1055,695,71,28,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 \\\---/// Sketch information - do not modify anything except names
 V300  Do not put anything below this section - it will be ignored
 *Industry - BAU
@@ -64516,7 +64499,7 @@ Energy-related emissions are all anthropogenic emissions from within the borders
 \\\---/// Sketch information - do not modify anything except names
 V300  Do not put anything below this section - it will be ignored
 *Web Application Support Variables
-$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,116,0
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,56,0
 10,1,Total CO2e Emissions,-4788,61,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 10,2,MOU Grams per Large Mass Output Unit CO2e,-4548,-50,75,30,8,130,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
 12,3,0,-4729,-294,644,20,8,135,0,4,-1,0,0,0,-1--1--1,255-255-128,|||0-0-0,0,0,0,0,0,0
@@ -67317,7 +67300,7 @@ Revenue changes for fuel-supplying cash flow entities should be the same after a
 :L<%^E!@
 1:test.vdfx
 4:Time
-5:Fraction of Industry Sector CCS Potential Achieved[Industry Category,Emissions Type]
+5:Output Total CO2e Emissions
 6:Acute bronchitis
 6:age 16to19
 6:age 20to24
@@ -68094,7 +68077,7 @@ Revenue changes for fuel-supplying cash flow entities should be the same after a
 6:Work loss days
 6:Year2021
 9:test
-19:83,13
+19:70,0
 24:2022
 25:2050
 26:2050
